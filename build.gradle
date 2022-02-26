@@ -10,11 +10,11 @@ buildscript {
 
     dependencies {
 
-        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.google.gms:google-services:4.3.10'
 
         //Para poder pasar parámetros.
 
-        classpath 'androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.4.0'
+        classpath 'androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.4.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
     } //Dependencias

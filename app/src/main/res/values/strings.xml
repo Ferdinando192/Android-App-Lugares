@@ -22,6 +22,7 @@
     <string name="msg_telefono">Telefono</string>
     <string name="msg_web">Web del lugar</string>
     <string name="bt_agregar">Agregar lugar</string>
+    <string name="bt_actualizar">Actualizar lugar</string>
     <string name="msg_agregado">El lugar agrego exitosamenter</string>
 
 </resources>
