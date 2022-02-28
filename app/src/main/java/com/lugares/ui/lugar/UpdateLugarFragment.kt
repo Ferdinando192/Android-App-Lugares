@@ -9,13 +9,13 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.lugares.R
-import com.lugares.databinding.FragmentUpdateBinding
+import com.lugares.databinding.FragmentUpdateLugarBinding
 import com.lugares.model.Lugar
 import com.lugares.viewmodel.LugarViewModel
 
 class UpdateLugarFragment : Fragment() {
     private lateinit var lugarViewModel: LugarViewModel
-    private var _binding: FragmentUpdateBinding? = null
+    private var _binding: FragmentUpdateLugarBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -23,7 +23,9 @@ class UpdateLugarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
       lugarViewModel = ViewModelProvider(this)[LugarViewModel::class.java]
-     _binding = FragmentUpdateBinding.inflate(inflater, container, false)
+     _binding = FragmentUpdateLugarBinding.inflate(inflater, container, false)
+
+
 
         binding.btAgregar.setOnClickListener {
           UpdateLugarFragment()

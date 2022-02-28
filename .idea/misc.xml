@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/app_bar_principal.xml" value="0.14791666666666667" />
-        <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_add_lugar.xml" value="0.14791666666666667" />
+        <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_add_lugar.xml" value="0.2" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_fila.xml" value="0.4" />
-        <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_lugar.xml" value="0.14791666666666667" />
+        <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_lugar.xml" value="0.536" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_slideshow.xml" value="0.14791666666666667" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_update.xml" value="0.4" />
+        <entry key="..\:/Repos/Movil/app/src/main/res/layout/fragment_update_lugar.xml" value="0.1" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/lugar_fila.xml" value="0.14791666666666667" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/lugar_fragment.xml" value="0.25" />
         <entry key="..\:/Repos/Movil/app/src/main/res/layout/nav_header_principal.xml" value="0.14791666666666667" />
