@@ -32,7 +32,6 @@ class LugarFragment : Fragment() {
 
         binding.addLugarFabButton.setOnClickListener {
             findNavController().navigate(R.id.action_nav_lugar_to_addLugarFragment)
-
         }
 
         //Activar el recyclerView
