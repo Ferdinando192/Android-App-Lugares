@@ -1,15 +1,11 @@
 package com.lugares.model
 
 import android.os.Parcelable
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import kotlinx.parcelize.Parcelize
+import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-@Entity(tableName = "Lugar")
 data class Lugar(
-    var id:String,
+    var id: String,//En Firestore los IDs deben ser strings.
     val nombre: String,
     val correo: String?,
     val telefono: String?,
@@ -18,9 +14,11 @@ data class Lugar(
     val longitud: Double?,
     val altura: Double?,
     val rutaAudio: String?,
-    val rutaImagen: String?,
+    val rutaImagen: String?
 
-    ) : Parcelable {
+) : Parcelable{
     constructor():
-    this ("","","","","",0.0,0.0,0.0,"","")
+            this("","","","","",0.0,0.0,0.0,"","")
 }
+
+

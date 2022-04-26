@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -45,11 +43,11 @@
         tools:text="@string/msg_web" />
 
     <Button
-        android:id="@+id/btAgregar"
+        android:id="@+id/btActualizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bt_agregar"
-    />
+        android:text="@string/bt_actualizar"
+        tools:text="@string/bt_actualizar" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,6 +84,13 @@
             android:contentDescription="@string/msg_web_view"
             android:scaleType="fitCenter"
             android:src="@drawable/web_logo" />
+        <ImageButton
+            android:id="@+id/btPlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/msg_escucha_audio"
+            android:src="@drawable/ic_play" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -129,8 +134,15 @@
             android:contentDescription="@string/msg_map_view"
             android:src="@drawable/ic_location"
             tools:ignore="ImageContrastCheck" />
+
+
     </LinearLayout>
-
-
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="@string/msg_imagen"
+        android:scaleType="centerInside"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@tools:sample/backgrounds/scenic" />
 </LinearLayout>
-

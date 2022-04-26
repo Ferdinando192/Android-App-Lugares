@@ -1,29 +1,40 @@
 <resources>
-
-    <string name="app_name">Lugares</string>
+    <string name="app_name" translatable="false">Lugares</string>
     <string name="tv_correo">Correo</string>
     <string name="tv_clave">Contraseña</string>
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_lugar">Lugares</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_gallery">Mapa</string>
     <string name="menu_slideshow">Slideshow</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="msg_nombre">Nombre del lugar</string>
-    <string name="msg_correo">Correo del lugar</string>
-    <string name="msg_telefono">Telefono</string>
-    <string name="msg_web">Web del lugar</string>
-    <string name="bt_agregar">Agregar lugar</string>
-    <string name="bt_actualizar">Actualizar lugar</string>
-    <string name="msg_agregado">El lugar agrego exitosamenter</string>
+    <!-- comment -->
+
+    <!-- Fragment Add Lugar -->
+    <string name ="msg_nombre">Nombre del lugar</string>
+    <string name ="msg_correo">Correo del lugar</string>
+    <string name ="msg_telefono">Teléfono del lugar</string>
+    <string name ="msg_web">Web del lugar</string>
+    <string name ="bt_agregar">Agregar lugar</string>
+
+    <!-- Fragment Actualizar Lugar -->
+    <string name ="bt_actualizar">Actualizar lugar</string>
+
+    <string name ="msg_agregar">Agregar Lugar</string>
+    <string name ="msg_actualizado">Lugar actualizado</string>
+
+    <!--    Menu creado manualmente para Delete Lugar-->
+    <string name="menu_delete">Eliminar Lugar</string>
+    <string name="si">Si</string>
+    <string name="msg_seguro_borrar">¿Está seguro de borrar el lugar?</string>
+    <string name="no">No</string>
 
     <string name="msg_enviar_correo">Enviar correo electrónico</string>
     <string name="msg_phone_call">Realizar llamada telefónica</string>
@@ -36,6 +47,35 @@
     <string name="msg_saludos">Saludos amigos</string>
     <string name="msg_mensaje_correo">Le escribo este correo para</string>
     <string name="msg_datos">Faltan datos</string>
-    <string name="error">Error</string>
+    <string name="error">0.0</string> <!--    Error cuando no puede recuperar la localización-->
+
+    <string name="msg_firebase_add">Lugar agregado</string>
+    <string name="msg_firebase_update">Lugar modificado</string>
+    <string name="msg_firebase_delete">Lugar eliminado</string>
+    <string name="msg_firebase_no_add">ERROR: Lugar no agregado</string>
+    <string name="msg_firebase_no_update">ERROR: Lugar no modificado</string>
+    <string name="msg_firebase_no_delete">ERROR: Lugar no eliminado</string>
+
+
+    <string name="msg_imagen">Imagen del lugar</string>
+    <string name="msg_graba_pausa">Graba o pausa grabación</string>
+    <string name="msg_escucha_audio">Escucha nota de audio</string>
+    <string name="msg_delete_nota">Borra nota de audio</string>
+    <string name="msg_rec_stop_nota">Graba o detiene nota de audio</string>
+    <string name="msg_take_photo">Toma foto</string>
+    <string name="msg_rotate_l">Rota izquierda</string>
+    <string name="msg_rotale_r">Rota a la derecha</string>
+    <string name="msg_graba_audio">Grabando nota de audio</string>
+    <string name="msg_detener_audio">Nota de audio detenida</string>
+    <string name="msg_subiendo_audio">Subiendo Nota Audio</string>
+    <string name="msg_subiendo_image">Subiendo imagen</string>
+    <string name="todo">Revisar luego</string>
+
+    <!--   Web client Id del servicio de Google en Firestore-->
+    <string name="id_web" translatable="false">988044502594-0qqathf3b0gsdgl8mu28fqmhl3p811s0.apps.googleusercontent.com</string>
+
+    <!--    Google Maps-->
+    <!--    Se agrega la clave API Key de Google Api en un string llamado google_maps_key-->
+    <string name="google_maps_key" translatable="false">AIzaSyATk6G_1_WlQPby-YScjc_lmOvHkp6A9-k</string>
 
 </resources>

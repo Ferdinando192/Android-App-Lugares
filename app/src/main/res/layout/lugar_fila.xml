@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="160dp"
     app:cardCornerRadius="25dp"
-    app:cardElevation="30dp"
+    app:cardElevation="15dp"
     app:contentPadding="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/imagen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,36 +26,47 @@
             android:id="@+id/tv_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="4dp"
             android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_correo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintStart_toEndOf="@+id/imagen" />
 
         <TextView
             android:id="@+id/tv_correo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginBottom="12dp"
             android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/tv_telefono"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imagen"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imagen" />
 
         <TextView
             android:id="@+id/tv_telefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
             android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/tv_web"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imagen"
-            app:layout_constraintTop_toBottomOf="@+id/tv_correo" />
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toEndOf="@+id/imagen" />
 
         <TextView
             android:id="@+id/tv_web"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imagen"
-            app:layout_constraintTop_toBottomOf="@+id/tv_telefono" />
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toEndOf="@+id/imagen" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

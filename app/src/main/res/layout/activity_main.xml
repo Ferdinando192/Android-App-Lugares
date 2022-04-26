@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/correo_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_correo"
@@ -16,7 +16,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,7 +48,7 @@
 
         <ImageButton
             android:id="@+id/bt_register"
-            android:layout_width="wrap_content"
+            android:layout_width="59dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_register" />
@@ -60,4 +60,11 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common_google_signin_btn_text_dark_normal" />
+
 </LinearLayout>

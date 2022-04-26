@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.lugares.ui.lugar.AddLugarFragment">
+    tools:context=".ui.lugar.AddLugarFragment">
 
     <EditText
         android:id="@+id/etNombre"
@@ -48,8 +46,9 @@
         android:id="@+id/btAgregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bt_agregar"
-        tools:text="@string/bt_agregar" />
+        android:text="@string/msg_agregar"
+        tools:text="@string/msg_agregar" />
+
 
     <TableLayout
         android:layout_width="match_parent"
@@ -114,4 +113,90 @@
                 android:textSize="18sp" />
         </TableRow>
     </TableLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/msgMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_accion"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_mic"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/bt_play"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_photo" />
+
+        <ImageButton
+            android:id="@+id/bt_rota_l"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_rotate_l" />
+
+        <ImageButton
+            android:id="@+id/bt_rota_r"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_rotate_r" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="@string/msg_imagen"
+        android:scaleType="centerInside"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+
 </LinearLayout>
